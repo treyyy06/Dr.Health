@@ -65,7 +65,7 @@ const ApiKeySetup: React.FC<ApiKeySetupProps> = ({ language, onApiKeySubmit }) =
   const validateApiKey = async (key: string): Promise<boolean> => {
     // Simulate API validation
     await new Promise(resolve => setTimeout(resolve, 2000));
-    return key.length > 10 && key.startsWith('sk-');
+    return key.length > 10 && key.startsWith('gsk_');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
